@@ -1,0 +1,9 @@
+RewriteEngine On
+
+#redirect to canonical url (non www)
+RewriteCond %{HTTP_HOST} ^www.twixxee.com [NC]
+RewriteRule ^(.*)$ http://twixxee.com/$1 [L,R=301]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ $1.php [L,QSA]

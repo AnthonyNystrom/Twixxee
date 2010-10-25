@@ -1,0 +1,7 @@
+<?php
+	$key = "";
+	$secret = "";
+
+	define('COOKIE_NAME', '');
+	define('COOKIE_DOMAIN', '');
+?>
